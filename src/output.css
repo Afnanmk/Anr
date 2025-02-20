@@ -535,26 +535,47 @@
   .top-1\/4 {
     top: calc(1/4 * 100%);
   }
+  .top-\[-10px\] {
+    top: -10px;
+  }
   .top-\[4\.8rem\] {
     top: 4.8rem;
   }
-  .top-\[12\%\] {
-    top: 12%;
+  .top-\[15\%\] {
+    top: 15%;
   }
-  .top-\[23\%\] {
-    top: 23%;
+  .top-\[25\%\] {
+    top: 25%;
+  }
+  .top-\[37\%\] {
+    top: 37%;
+  }
+  .top-\[40\%\] {
+    top: 40%;
+  }
+  .top-\[55\%\] {
+    top: 55%;
   }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
-  .right-\[15\%\] {
-    right: 15%;
+  .right-\[1\%\] {
+    right: 1%;
+  }
+  .right-\[7\%\] {
+    right: 7%;
+  }
+  .right-\[30\%\] {
+    right: 30%;
   }
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-\[18\%\] {
-    left: 18%;
+  .left-\[2\%\] {
+    left: 2%;
+  }
+  .left-\[20\%\] {
+    left: 20%;
   }
   .-z-10 {
     z-index: calc(10 * -1);
@@ -571,17 +592,11 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-\[1rem\] {
-    margin-top: 1rem;
-  }
   .mt-\[2\.625rem\] {
     margin-top: 2.625rem;
   }
   .mt-\[3rem\] {
     margin-top: 3rem;
-  }
-  .mt-\[6rem\] {
-    margin-top: 6rem;
   }
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
@@ -607,6 +622,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-\[24px\] {
+    height: 24px;
+  }
   .h-\[610px\] {
     height: 610px;
   }
@@ -618,6 +636,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-\[24px\] {
+    width: 24px;
   }
   .w-\[90\%\] {
     width: 90%;
@@ -942,6 +963,16 @@
       }
     }
   }
+  .sm\:right-\[12\%\] {
+    @media (width >= 40rem) {
+      right: 12%;
+    }
+  }
+  .sm\:left-\[25\%\] {
+    @media (width >= 40rem) {
+      left: 25%;
+    }
+  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
@@ -962,6 +993,16 @@
       display: inline-block;
     }
   }
+  .sm\:h-\[36px\] {
+    @media (width >= 40rem) {
+      height: 36px;
+    }
+  }
+  .sm\:w-\[36px\] {
+    @media (width >= 40rem) {
+      width: 36px;
+    }
+  }
   .sm\:flex-row {
     @media (width >= 40rem) {
       flex-direction: row;
@@ -977,9 +1018,19 @@
       align-items: center;
     }
   }
+  .sm\:px-6 {
+    @media (width >= 40rem) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+  }
   .sm\:px-12 {
     @media (width >= 40rem) {
       padding-inline: calc(var(--spacing) * 12);
+    }
+  }
+  .sm\:py-3 {
+    @media (width >= 40rem) {
+      padding-block: calc(var(--spacing) * 3);
     }
   }
   .md\:order-1 {
@@ -1038,6 +1089,56 @@
       line-height: var(--tw-leading, var(--text-base--line-height));
     }
   }
+  .lg\:top-\[7\%\] {
+    @media (width >= 64rem) {
+      top: 7%;
+    }
+  }
+  .lg\:top-\[21\%\] {
+    @media (width >= 64rem) {
+      top: 21%;
+    }
+  }
+  .lg\:top-\[35\%\] {
+    @media (width >= 64rem) {
+      top: 35%;
+    }
+  }
+  .lg\:top-\[37\%\] {
+    @media (width >= 64rem) {
+      top: 37%;
+    }
+  }
+  .lg\:top-\[44\%\] {
+    @media (width >= 64rem) {
+      top: 44%;
+    }
+  }
+  .lg\:right-\[1\%\] {
+    @media (width >= 64rem) {
+      right: 1%;
+    }
+  }
+  .lg\:right-\[5\%\] {
+    @media (width >= 64rem) {
+      right: 5%;
+    }
+  }
+  .lg\:right-\[10\%\] {
+    @media (width >= 64rem) {
+      right: 10%;
+    }
+  }
+  .lg\:left-\[7\%\] {
+    @media (width >= 64rem) {
+      left: 7%;
+    }
+  }
+  .lg\:left-\[10\%\] {
+    @media (width >= 64rem) {
+      left: 10%;
+    }
+  }
   .lg\:w-\[50\%\] {
     @media (width >= 64rem) {
       width: 50%;
@@ -1078,9 +1179,59 @@
       font-size: 4rem;
     }
   }
+  .xl\:right-\[10\%\] {
+    @media (width >= 80rem) {
+      right: 10%;
+    }
+  }
+  .xl\:right-\[13\%\] {
+    @media (width >= 80rem) {
+      right: 13%;
+    }
+  }
+  .xl\:right-\[18\%\] {
+    @media (width >= 80rem) {
+      right: 18%;
+    }
+  }
+  .xl\:left-\[15\%\] {
+    @media (width >= 80rem) {
+      left: 15%;
+    }
+  }
+  .xl\:left-\[17\%\] {
+    @media (width >= 80rem) {
+      left: 17%;
+    }
+  }
   .xl\:px-15 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 15);
+    }
+  }
+  .\32 xl\:right-\[16\%\] {
+    @media (width >= 96rem) {
+      right: 16%;
+    }
+  }
+  .\32 xl\:right-\[20\%\] {
+    @media (width >= 96rem) {
+      right: 20%;
+    }
+  }
+  .\32 xl\:right-\[24\%\] {
+    @media (width >= 96rem) {
+      right: 24%;
+    }
+  }
+  .\32 xl\:left-\[21\%\] {
+    @media (width >= 96rem) {
+      left: 21%;
+    }
+  }
+  .\32 xl\:left-\[24\%\] {
+    @media (width >= 96rem) {
+      left: 24%;
     }
   }
   .\32 xl\:px-28 {
@@ -1195,22 +1346,21 @@ body {
 }
 .floating-button:nth-child(2) {
   animation: float2 3s infinite ease-in-out 0.5s;
-  margin-top: 3rem;
 }
 .floating-button:nth-child(3) {
   animation: float3 3s infinite ease-in-out 1s;
-  margin-top: 3.5rem;
 }
 .floating-button:nth-child(4) {
   animation: float1 3s infinite ease-in-out;
 }
 .floating-button:nth-child(5) {
   animation: float2 3s infinite ease-in-out 0.5s;
-  margin-top: 3rem;
 }
 .floating-button:nth-child(6) {
   animation: float3 3s infinite ease-in-out 1s;
-  margin-top: 3.5rem;
+}
+.floating-button:last-child {
+  animation: float2 3s infinite ease-in-out 1.2s;
 }
 @keyframes spin {
   to {
