@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-[#1a2940] to-[#53b8c4] flex items-center justify-center min-h-screen">
+    
+    <section class="relative w-full max-w-[1920px] mx-auto px-6 sm:px-12 lg:px-20 py-16">
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center -z-10" style="background-image: url('/mnt/data/bg-iphone.PNG');"></div>
+        
+        <!-- iPhone Container -->
+        <div class="relative w-[350px] md:w-[400px] mx-auto">
+            <img src="/mnt/data/bg-iphone.PNG" alt="iPhone" class="w-full mx-auto">
+
+            <!-- Left Floating Buttons -->
+            <div class="absolute top-1/4 left-0 -translate-x-1/2 space-y-4">
+                <div class="bg-white shadow-md px-4 py-2 rounded-full flex items-center space-x-2">
+                    <span>🔗</span> <span>روابط قصيرة</span>
+                </div>
+                <div class="bg-white shadow-md px-4 py-2 rounded-full flex items-center space-x-2">
+                    <span>📁</span> <span>الصفحات الحيوية</span>
+                </div>
+                <div class="bg-white shadow-md px-4 py-2 rounded-full flex items-center space-x-2">
+                    <span>📷</span> <span>رموز QR</span>
+                </div>
+            </div>
+
+            <!-- Right Floating Buttons -->
+            <div class="absolute top-1/4 right-0 translate-x-1/2 space-y-4">
+                <div class="bg-white shadow-md px-4 py-2 rounded-full flex items-center space-x-2">
+                    <span>💬</span> <span>بطاقات المشاركة</span>
+                </div>
+                <div class="bg-white shadow-md px-4 py-2 rounded-full flex items-center space-x-2">
+                    <span>📂</span> <span>نقل الملفات</span>
+                </div>
+                <div class="bg-white shadow-md px-4 py-2 rounded-full flex items-center space-x-2">
+                    <span>🖥️</span> <span>استضافة مواقع HTML</span>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+</body>
+</html>

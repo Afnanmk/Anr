@@ -1,1 +1,62 @@
 @import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --deepNavyBlue: rgba(25,48,87,1);
+    --aquaGreen: rgba(40, 226, 173, 1);
+
+  }
+
+
+@layer base {
+    body {
+        font-family: "Noto Sans", serif;
+    }
+    h1 {
+        font-size: 4.5rem;
+        line-height: 6.66rem;
+        color: #ffffff;
+        font-weight: 700;
+      }
+    h2 {
+          font-size: 4rem;
+          line-height: 5.92rem;
+          color: var(--deepNavyBlue);
+          font-weight: 700;
+      }
+      
+      @media (max-width: 1025px) {
+        h2 {
+          font-size: 2.5rem;
+          line-height: 1.995rem;
+         }
+      }
+
+      @media (max-width: 768px) {
+         h1 {
+          font-size: 2rem;
+          line-height: 2.9375rem;
+         }
+
+         h2 {
+          font-size: 1.5rem;
+          line-height: 1.995rem;
+         }
+      }
+}
+
+
+@layer components {
+    .description-text {
+      font-size: 1.125rem;
+      line-height: 2.0625rem;
+      color: rgba(127, 127, 127, 1);
+      font-weight: 400;
+  }
+  
+  .container {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  }
