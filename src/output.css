@@ -598,6 +598,15 @@
   .mx-auto {
     margin-inline: auto;
   }
+  .my-3 {
+    margin-block: calc(var(--spacing) * 3);
+  }
+  .my-5 {
+    margin-block: calc(var(--spacing) * 5);
+  }
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
   .mt-\[2\.625rem\] {
     margin-top: 2.625rem;
   }
@@ -655,11 +664,38 @@
   .w-\[24px\] {
     width: 24px;
   }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[80\%\] {
+    width: 80%;
+  }
   .w-\[90\%\] {
     width: 90%;
   }
+  .w-\[95\%\] {
+    width: 95%;
+  }
+  .w-\[300px\] {
+    width: 300px;
+  }
   .w-\[350px\] {
     width: 350px;
+  }
+  .w-\[500px\] {
+    width: 500px;
+  }
+  .w-\[600px\] {
+    width: 600px;
+  }
+  .w-\[650px\] {
+    width: 650px;
+  }
+  .w-\[680px\] {
+    width: 680px;
+  }
+  .w-\[700px\] {
+    width: 700px;
   }
   .w-fit {
     width: fit-content;
@@ -1086,11 +1122,6 @@
       order: 2;
     }
   }
-  .md\:mb-0 {
-    @media (width >= 48rem) {
-      margin-bottom: calc(var(--spacing) * 0);
-    }
-  }
   .md\:w-\[50\%\] {
     @media (width >= 48rem) {
       width: 50%;
@@ -1099,6 +1130,11 @@
   .md\:w-\[60\%\] {
     @media (width >= 48rem) {
       width: 60%;
+    }
+  }
+  .md\:w-\[390px\] {
+    @media (width >= 48rem) {
+      width: 390px;
     }
   }
   .md\:w-\[400px\] {
@@ -1182,6 +1218,11 @@
       left: 10%;
     }
   }
+  .lg\:my-1 {
+    @media (width >= 64rem) {
+      margin-block: calc(var(--spacing) * 1);
+    }
+  }
   .lg\:mb-0 {
     @media (width >= 64rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -1190,6 +1231,11 @@
   .lg\:w-\[50\%\] {
     @media (width >= 64rem) {
       width: 50%;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
     }
   }
   .lg\:flex-nowrap {
@@ -1252,6 +1298,31 @@
       left: 17%;
     }
   }
+  .xl\:w-\[40\%\] {
+    @media (width >= 80rem) {
+      width: 40%;
+    }
+  }
+  .xl\:w-\[300px\] {
+    @media (width >= 80rem) {
+      width: 300px;
+    }
+  }
+  .xl\:w-\[400px\] {
+    @media (width >= 80rem) {
+      width: 400px;
+    }
+  }
+  .xl\:w-\[420px\] {
+    @media (width >= 80rem) {
+      width: 420px;
+    }
+  }
+  .xl\:w-\[430px\] {
+    @media (width >= 80rem) {
+      width: 430px;
+    }
+  }
   .xl\:px-15 {
     @media (width >= 80rem) {
       padding-inline: calc(var(--spacing) * 15);
@@ -1280,6 +1351,11 @@
   .\32 xl\:left-\[24\%\] {
     @media (width >= 96rem) {
       left: 24%;
+    }
+  }
+  .\32 xl\:w-\[450px\] {
+    @media (width >= 96rem) {
+      width: 450px;
     }
   }
   .\32 xl\:px-28 {
