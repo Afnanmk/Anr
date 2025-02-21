@@ -1,20 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --font-noto: "Noto Sans", serif; 
-}
+
 
 :root {
     --deepNavyBlue: rgba(25,48,87,1);
     --aquaGreen: rgba(40, 226, 173, 1);
   }
 
-  body {
-    font-family: "Noto Sans", serif;
-}
+
 @layer base {
- 
+  body {
+    font-family: "Noto Sans Arabic", serif;
+}
    
     h1 {
         font-size: 4.5rem;

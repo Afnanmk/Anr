@@ -2,7 +2,11 @@
  export default {
     content: ["./src/**/*.{html,js}"],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+        arabic: ['Noto Sans Arabic', 'sans-serif'],
+      },
+      },
     },
     plugins: [],
   }
